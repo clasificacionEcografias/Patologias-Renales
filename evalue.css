@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff3d7;
+  }
+  #cargar {
+    text-align: center;
+  }
+
+  .princi{
+    color: #49497f;
+  }
+
+  #lab_img{
+      cursor:pointer; 
+      padding: 16px 24px;
+      font-size: 18px;
+      background-color: #49497f; 
+      color: white; 
+      border-radius: 5px; 
+  }
+
+#lab_desc{
+      cursor:pointer; 
+      padding: 16px 24px;
+      font-size: 18px;
+      background-color: #49497f; 
+      color: white; 
+      border-radius: 5px; 
+}

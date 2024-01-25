@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ajusta la distribución vertical del contenido */
+    min-height: 100vh; /* Establece el alto mínimo de la página completa */
+    margin: 0;
+    color: #49497f;
+    background-color: #fef2d7;
+}
+
+h1 {
+    margin: 4px;
+    font-size: 36px;
+}
+
+input[type="text"],
+input[type="button"] {
+    padding: 18px 54px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid #fef2d7;
+    margin: 8px 0;
+    margin-bottom: 96px;
+}
+
+input[type="text"] {
+    padding: 16px 52px;
+    border: 2px solid black;
+}
+
+input[type="button"] {
+    background-color: #49497f;
+    color: white;
+    cursor: pointer;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* Estilo para la primera imagen */
+.top-image {
+    align-self: flex-start; /* Coloca la imagen al inicio de la columna */
+    margin: 0px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para la última imagen */
+.bottom-image {
+    align-self: flex-end; /* Coloca la imagen al final de la columna */
+    margin: 0px; /* Ajusta el margen inferior según sea necesario */
+}
+
+#cargar {
+    text-align: center;
+  }
+
+  .princi{
+    color: #49497f;
+  }
+
+.butt_lab{
+      cursor:pointer; 
+      padding: 15px 24px;
+      margin: 0px 4px 0px 4px;
+      font-size: 20px;
+      background-color: #49497f; 
+      color: white; 
+      border-radius: 5px; 
+  }
+
+#evaluar{
+    padding: 16px 24px;
+    font-size: 18px;
+    margin: 8px;
+    background-color: #49497f; 
+    color: white; 
+    border-radius: 5px; 
+}

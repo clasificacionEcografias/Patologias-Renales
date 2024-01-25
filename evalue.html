@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Niu Vet</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    </head>
+
+    <body>
+        <img class="top-image" src="static/logo.png" style="height: 144px; width: 144px;">
+        <div id="cargar">
+            <h1 class="princi">SUBIR UNA IMAGEN PARA</h1>
+            <h1 class="princi">EVALUAR</h1>
+            <br>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <input type="file" accept="image/*" id="imagenInput" style="display:none;">
+                <label class="butt_lab" id ="lab_img" for="imagenInput">CARGAR IMAGEN</label>
+                <input type="button" id="descargar" style="display:none;">
+                <label class="butt_lab" id="lab_desc" for="descargar" style="display:none;">DESCARGAR</label>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div style="text-align: center; width: 400px; ">
+                <canvas id="canvas" style="margin-top: 32px; height: 240px; width: 360px;"></canvas>
+                <h3 style="margin: 4px;">DIAGNÓSTICO:</h3>
+                <h3 id = "diagnostico" style="margin: 4px;">Sin Resultados</h3>
+            </div>
+            <div id="recomend" style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: 24px; margin-left: 8px; width: 0px;">
+            </div>
+        </div>
+        <img class="bottom-image" src="static/perros_min.png">
+    </body>
+    <script type="text/javascript" src="evalue.js"></script>
+</html>

@@ -7,8 +7,12 @@ function verificarValor() {
 
     // Verificar si el valor ingresado es igual al valor preestablecido
     if (valorIngresado === valorPreestablecido) {
+        // Obtener la URL base del repositorio en GitHub
+        var githubURL = 'https://tuusuario.github.io/turepositorio'; // Reemplaza con tu nombre de usuario y nombre de repositorio
+        // Redirigir a otra página web en GitHub
+        window.location.href = githubURL + '/evalue.html';
         // Redirigir a otra página web
-        window.location.href = 'http://localhost:8000/evalue.html';
+        // window.location.href = 'http://localhost:8000/evalue.html';
     } else {
         // Mostrar un mensaje si el valor no coincide
         alert('El valor ingresado no es válido. Inténtelo de nuevo.');
